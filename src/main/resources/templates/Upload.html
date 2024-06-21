@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Upload File</title>
+</head>
+<body>
+<h3>Upload a File</h3>
+<form method="POST" enctype="multipart/form-data" action="/upload">
+  <input type="file" name="file" />
+  <button type="submit">Upload</button>
+</form>
+
+<h3>Find Max Number</h3>
+<form method="GET" action="/findMaxNumber">
+  <button type="submit">Find Max Number</button>
+</form>
+
+<h3>Find Min Number</h3>
+<form method="GET" action="/findMinNumber">
+  <button type="submit">Find Min Number</button>
+</form>
+
+<h3>Find Average Number</h3>
+<form method="GET" action="/findAverageNumber">
+  <button type="submit">Find Average Number</button>
+</form>
+
+<h3>Find Median Number</h3>
+<form method="GET" action="/findMedianNumber">
+  <button type="submit">Find Median Number</button>
+</form>
+
+<h3>Find Longest Increasing Sequence</h3>
+<form method="GET" action="/findLongestIncreasingSequence">
+  <button type="submit">Find Longest Increasing Sequence</button>
+</form>
+
+<h3>Find Longest Decreasing Sequence</h3>
+<form method="GET" action="/findLongestDecreasingSequence">
+  <button type="submit">Find Longest Decreasing Sequence</button>
+</form>
+
+<p th:text="${message}"></p>
+
+</body>
+</html>
